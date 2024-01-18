@@ -1,0 +1,235 @@
+%-------------------------
+% Resume in Latex
+% Author : Faramarz Aboutalebi
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on January 12th, 2024
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Faramarz Aboutalebi} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/FaramarzAboutalebi}{\underline{github.com/}} $  $
+    \faIcon{code}
+    \href{https://faramarzaboutalebi.github.io/PersonalWebsite/}
+    {\underline{PersonalWebsite}} $  $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/faramarz-aboutalebi-88335828a/}{\underline{linkedin.com/}} $  $
+    \faIcon{envelope}
+    \href{Fara@knights.ucf.edu}
+    {\underline{Fara@knights.ucf.edu}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {High School Math and Physics Diploma}{2015}
+      
+
+    \resumeSubheading
+      {Solid State Physics Bachelor/Graduated}{July 2020}
+      {Bu-Ali Sina University}{}
+      
+    \resumeSubheading
+      {Computer Science Undergraduate}{August 2021-Current}
+      {University of Central Florida }{UCF GPA: 3.561/4.0}
+      
+    =
+
+    \vspace{-10pt}
+
+    \subsection{Achievements}
+      %\textbf{Courses:} Object-Oriented Programming, Data Structures \& Algorithms, Embedded Systems, Discrete Math, Linear Algebra, Calculus, Physics, Probability \& Statistics \\
+      \textbf{Awards:} Benefited received a scholarship from the \textbf{Momeni Foundation} (2x), Certified Premium Deli Professional by \textbf{Boar’s Head}.
+
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: C/C++, Python, Java, Assembly Language, JavaScript, HTML, CSS, React, Vite, \LaTeX.} \\
+     
+     \textbf{Tools}{: Git/GitHub, Unix Shell, VS Code, PyCharm/IDEA, Eclipse, Android studio, Google colab, and Xcode.}
+     
+     % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+            {\textbf{\href{https://faramarzaboutalebi.github.io/PersonalWebsite/}{\underline{Personal Website}}} $|$ \emph{\footnotesize React, JavaScript, Vite, CSS, GitHub Pages, Git, Unix Shell, VS Code}}{Jan. 2024 - Present}
+        
+        \resumeItemListStart
+            \resumeItem{View the project on the \faIcon{github} \href{https://github.com/FaramarzAboutalebi/PersonalWebsite.git}{\underline{GitHub}}.}
+            \resumeItem{Developed a personal website to showcase my portfolio and skills in web development.}
+            \resumeItem{Implemented the site using React and Vite, demonstrating proficiency in modern JavaScript frameworks and build tools.}
+            \resumeItem{Designed a responsive and user-friendly interface, with a focus on clean aesthetics and ease of navigation.}
+            \resumeItem{Integrated a dynamic content update mechanism using React's state management and lifecycle methods.}
+            \resumeItem{Successfully deployed the website using GitHub Pages, gaining practical experience in website hosting and deployment.}
+            \resumeItem{Managed the project using Git, demonstrating skills in version control and collaborative development.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+            {\textbf{Software System - Compiler Project} $|$ \emph{\footnotesize C, Assembly Language, Git, Unix Shell, VS Code}}{Aug 2023 -- Nov 2023}
+        
+        \resumeItemListStart
+            \resumeItem{Developed a comprehensive compiler for the PL/0 programming language, including a virtual machine, lexical analyzer, recursive descent parser, and advanced parser with procedural constructs:}
+            \resumeItem{Implemented a P-machine to execute PL/0 assembly code, featuring a segmented process address space for instructions and data. \href{https://github.com/FaramarzAboutalebi/SoftwareSystem-CompilerProject/tree/main/HW1#readme}{\underline{ReadMe}}}
+            
+            \resumeItem{Created a lexical analyzer in HW2 to tokenize PL/0 source code and generate lexeme tables. \href{https://github.com/FaramarzAboutalebi/SoftwareSystem-CompilerProject/tree/main/HW2#readme}{\underline{ReadMe}}}
+            \resumeItem{Developed a recursive descent parser in HW3 to analyze PL/0 program syntax, generate intermediate code, and integrate with the lexical analyzer. \href{https://github.com/FaramarzAboutalebi/SoftwareSystem-CompilerProject/tree/main/HW3#readme}{\underline{ReadMe}}}
+            \resumeItem{Enhanced the parser in HW4 to support additional grammatical constructs like procedures and calls, refining syntax error detection and reporting. \href{https://github.com/FaramarzAboutalebi/SoftwareSystem-CompilerProject/tree/main/HW4#readme}{\underline{ReadMe}}}
+        \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+          \resumeProjectHeading
+          {\textbf{Information Technology Instructor - Intern} $|$ \footnotesize\emph{Valencia College, FL}\vspace{8pt}}{June. 2023 -- Aug. 2023}
+          \resumeItemListStart
+            \resumeItem{Delivered an 8-week IT program focused on JavaScript, HTML, and CSS.}
+            \resumeItem{Conducted interactive classes, designed self-paced activities, and supported students in final projects.}
+            \resumeItemListEnd
+
+          \resumeProjectHeading
+          {\textbf{Computer Science I undergraduate teaching assistant}\vspace{8pt} $|$ \footnotesize\emph{UCF, FL}}{Jan. 2023 -- May 2023}
+          \resumeItemListStart
+            \resumeItem{Responsible for conducting lab exams, teaching, and solving problems as the lab instructor.}
+            \resumeItem{Grading codes, quizzes, and exams submitted by students.}
+            \resumeItem{Holding office hours to respond to students' questions and help them with code debugging.}
+          \resumeItemListEnd
+
+          \resumeProjectHeading
+          {\textbf{Introduction to Programming with C undergraduate teaching assistant} $|$ \footnotesize\emph{UCF, FL}\vspace{8pt}}{Aug. 2022 -- Dec.2022}
+          \resumeItemListStart
+            \resumeItem{Responsible for conducting lab exams, teaching, and solving problems as the lab instructor.}
+            \resumeItem{Grading codes, quizzes, and exams submitted by students.}
+            \resumeItem{Holding office hours to respond to students' questions and help them with code debugging.}
+          \resumeItemListEnd
+
+        
+          
+    \resumeSubHeadingListEnd 
+
+\end{document}
